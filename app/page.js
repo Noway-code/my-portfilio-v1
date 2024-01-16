@@ -22,19 +22,7 @@ export default function Home() {
 							href={"https://app.thestorygraph.com/profile/nowayreads"} target="_blank" rel="noopener noreferrer">
 							<AiFillBook />
 						</a>
-
-
 					</div>
-					<nav className="py-10 mb-12 flex justify-between">
-						<h1 className={'text-xl text-white font-Calibre'}>noway-code</h1>
-						<ul className={'flex items-center'}>
-							<li className={'hover:animate-wiggle'}>
-								<a className={'bg-blue-800 hover:bg-blue-600 text-white px-4 py-2 rounded-md ml-8 '} href="#">
-									Resume
-								</a>
-							</li>
-						</ul>
-					</nav>
 					<div className={'flex flex-col md:flex-row items-center'}>
 						<div className={'text-center pt-10 pl-20 md:mt-10 md:pr-8'}>
 							<h1 className={'text-4xl text-white py-2 font-bold text-center'}>Hi, I'm Camilo Alvarez-Velez </h1>
@@ -56,16 +44,24 @@ export default function Home() {
 					</div>
 				</section>
 				<section>
-					<div className={"lg:flex gap-10"}>
+					<div className={"flex-row lg:flex gap-10"}>
 						<div className={"text-center shadow-lg p-10 rounded-xl my-10 flex-1"}>
 							<Image src={Headshot} width={100} height={100} alt={"Design Icon"}/>
 							<h3 className={"text-lg font-medium pt-8 pb-2 "}>Designs</h3>
 							<p className="text-gray-800 py-1">Elegant code for your needs</p>
 							<h4 className={"py-4 text-teal-600"}>What I use: </h4>
-							<p className="text-gray-800 py-1">C, Java, JS</p>
-							<p className="text-gray-800 py-1">MySQL, MongoDB</p>
-							<p className="text-gray-800 py-1">Next.js, Node.js, Express.js</p>
-							<p className="text-gray-800 py-1">React, React Native, TailwindCSS, HTML, CSS</p>
+							<ul className={"*:inline-flex *:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-3 *:py-1 text-sky-300 *:border-sky-500/15 *:bg-sky-500/10 *:space-x-2"}>
+								<li className="m-1">MySQL</li>
+								<li className="m-1">MongoDB</li>
+								<li className="m-1">Next.js</li>
+								<li className="m-1">Node.js</li>
+								<li className="m-1">Express.js</li>
+								<li className="m-1">React</li>
+								<li className="m-1">React Native</li>
+								<li className="m-1">TailwindCSS</li>
+								<li className="m-1">HTML</li>
+								<li className="m-1">CSS</li>
+							</ul>
 						</div>
 						<div className={"text-center shadow-lg p-10 rounded-xl my-10 flex-1"}>
 							<Image src={Headshot} width={100} height={100} alt={"Code Icon"}/>

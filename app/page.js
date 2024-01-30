@@ -28,8 +28,8 @@ const MainContent = () => (
 			  <h1 className={'text-5xl md:text-6xl font-bold text-white text-center'}>Camilo Alvarez-Velez</h1>
 			  <h2 className={'text-2xl md:text-3xl font-bold text-white text-center'}>Software Engineer</h2>
 		  </div>
-		  <div className={'max-w-5xl w-full p-6 md:p-8 bg-blue-400 shadow-md rounded-2xl flex items-center snap-y var(--tw-scroll-snap-strictness) bg-gradient-to-bl from-cyan-600 to-purple-500'}>
-			  <div className={'w-1/2 pr-6 snap-end'}>
+		  <div className={'max-w-5xl w-full p-6 md:p-8 bg-blue-400 shadow-md rounded-2xl flex items-center bg-gradient-to-bl from-cyan-500 to-purple-800'}>
+			  <div className={'w-1/2 pr-6'}>
 
 				  <p className={'text-lg py-2 text-gray-200'}>
 					  I&apos;m a developer based in Orlando, FL. I love to create and build things that live on the internet.
@@ -68,12 +68,12 @@ const MainContent = () => (
 			  </div>
 		  </div>
 	  </section>
-	  <section style={{backgroundColor: '#37456b'}} className={"px-4 py-8 rounded-lg snap-center"}>
+	  <section style={{backgroundColor: '#37456b'}} className={"px-4 py-8 rounded-lg my-36 snap-center"}>
 		  <div className={'flex flex-col justify-around md:flex-row items-center'}>
 			  <div className="max-w-sm rounded shadow-2xl bg-gray-800 text-white hover:scale-110 duration-300 ">
 				  <img className="w-full" src="/card-top.jpg" alt="Sunset in the mountains"/>
 				  <div className="px-6 py-4">
-					  <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+					  <div className="font-bold text-xl mb-2">web dev :smile:</div>
 					  <p className="text-gray-700 text-base">
 						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
 					  </p>
@@ -88,7 +88,7 @@ const MainContent = () => (
 			  <div className="max-w-sm rounded shadow-2xl bg-gray-800 text-white hover:scale-110 duration-300 ">
 				  <img className="w-full" src="/card-top.jpg" alt="Sunset in the mountains"/>
 				  <div className="px-6 py-4">
-					  <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+					  <div className="font-bold text-xl mb-2">i am bodybuilder :3</div>
 					  <p className="text-gray-700 text-base">
 						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
 					  </p>
@@ -103,7 +103,7 @@ const MainContent = () => (
 			  <div className="max-w-sm rounded shadow-2xl bg-gray-800 text-white hover:scale-110 duration-300 ">
 				  <img className="w-full" src="/card-top.jpg" alt="Sunset in the mountains"/>
 				  <div className="px-6 py-4">
-					  <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+					  <div className="font-bold text-xl mb-2">weakest gurren lagann fan</div>
 					  <p className="text-gray-700 text-base">
 						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
 					  </p>
@@ -112,11 +112,32 @@ const MainContent = () => (
 					  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
 					  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
 					  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-
 				  </div>
 			  </div>
 		  </div>
-
+	  </section>
+	  <section className={"snap-start"}>
+		  <div>
+			  <h3 className={"text-3xl py-1"}>Projects</h3>
+			  <p className={"text-md py-2 leading-8 text-gray-800"}>
+				  I have worked on a variety of projects, ranging from web development to
+				  machine learning. Here are some of my favorites.
+			  </p>
+		  </div>
+		  <div className={"flex flex-col gap-12 py-10 lg:flex-row lg:flex-wrap bg-blue-900 p-20 mx-20 "}>
+			  <div className={"showcase basis-1/3 flex-1 drop-shadow-2xl relative"}>
+				  <div className="description">
+					  <p>This is the bold and commanding description text for Web Project 1. It takes up the size of the card.</p>
+				  </div>
+				  <Image src={'/card-top.jpg'} className={"rounded-lg object-cover"} layout={'responsive'} width={500} height={300} alt={"Web Project 1"}/>
+			  </div>
+			  <div className={"showcase basis-1/3 flex-1 drop-shadow-2xl relative"}>
+				  <div className="description">
+					  <p>This is the bold and commanding description text for Web Project 2. It takes up the size of the card.</p>
+				  </div>
+				  <Image src={'/card-top.jpg'} className={"rounded-lg object-cover"} layout={'responsive'} width={500} height={300} alt={"Web Project 2"}/>
+			  </div>
+		  </div>
 	  </section>
 	  <section className={"pt-40"}>
 		  <h2 className="text-3xl font-bold text-white mb-6">My Projects</h2>

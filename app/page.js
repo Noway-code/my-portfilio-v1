@@ -22,8 +22,8 @@ const SocialLinks = () => (
 );
 
 const MainContent = () => (
-  <main className={'px-10 md:px-40 lg:px-40 snap-y '}>
-	  <section className={'min-h-screen flex flex-col items-center justify-center snap-center'}>
+  <main className={'h-screen snap-y snap-proximity overflow-y-auto'}>
+	  <section className={'min-h-screen flex flex-col items-center justify-center snap-start'}>
 		  <div className={'flex flex-col items-center justify-center py-14'}>
 			  <h1 className={'text-5xl md:text-6xl font-bold text-white text-center'}>Camilo Alvarez-Velez</h1>
 			  <h2 className={'text-2xl md:text-3xl font-bold text-white text-center'}>Software Engineer</h2>
@@ -70,7 +70,7 @@ const MainContent = () => (
 	  </section>
 	  <section style={{backgroundColor: '#37456b'}} className={"px-4 py-8 rounded-lg snap-center"}>
 		  <div className={'flex flex-col justify-around md:flex-row items-center'}>
-			  <div className="max-w-sm rounded overflow-hidden shadow-2xl bg-gray-800 text-white hover:scale-110 duration-300 ">
+			  <div className="max-w-sm rounded shadow-2xl bg-gray-800 text-white hover:scale-110 duration-300 ">
 				  <img className="w-full" src="/card-top.jpg" alt="Sunset in the mountains"/>
 				  <div className="px-6 py-4">
 					  <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
@@ -85,7 +85,7 @@ const MainContent = () => (
 
 				  </div>
 			  </div>
-			  <div className="max-w-sm rounded overflow-hidden shadow-2xl bg-gray-800 text-white hover:scale-110 duration-300 ">
+			  <div className="max-w-sm rounded shadow-2xl bg-gray-800 text-white hover:scale-110 duration-300 ">
 				  <img className="w-full" src="/card-top.jpg" alt="Sunset in the mountains"/>
 				  <div className="px-6 py-4">
 					  <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
@@ -100,7 +100,7 @@ const MainContent = () => (
 
 				  </div>
 			  </div>
-			  <div className="max-w-sm rounded overflow-hidden shadow-2xl bg-gray-800 text-white hover:scale-110 duration-300 ">
+			  <div className="max-w-sm rounded shadow-2xl bg-gray-800 text-white hover:scale-110 duration-300 ">
 				  <img className="w-full" src="/card-top.jpg" alt="Sunset in the mountains"/>
 				  <div className="px-6 py-4">
 					  <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
@@ -118,10 +118,11 @@ const MainContent = () => (
 		  </div>
 
 	  </section>
-	  <section className={"pb-4"}>
+	  <section className={"pt-40"}>
 		  <h2 className="text-3xl font-bold text-white mb-6">My Projects</h2>
 		  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 			  {/* Project 1 */}
+
 			  <div className="hover:shadow-lg transition duration-300">
 				  <a href="/project1">
 					  <Image src={WebDev} alt="Project 1" className="rounded-md" width={100} height={60} />
@@ -139,10 +140,11 @@ const MainContent = () => (
 // Main component
 export default function Home() {
   return (
-    <div className={'mx-auto h-full w-full min-h-screen '}>
-      <div className="absolute top-0 z-[-1] min-h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,100,215,0.3),rgba(255,255,255,0))]" style={{minHeight: '200vh'}}></div>
-      <SocialLinks />
-      <MainContent />
-    </div>
+    <div className={'mx-auto h-full w-full min-h-screen'}>
+	    <div className="absolute top-0 z-[-1] min-h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,100,215,0.3),rgba(255,255,255,0))]" style={{minHeight: '200vh'}}></div>
+	    <SocialLinks />
+	    <MainContent />
+   </div>
+
   );
 }

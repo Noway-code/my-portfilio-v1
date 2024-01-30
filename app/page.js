@@ -22,7 +22,9 @@ const SocialLinks = () => (
 );
 
 const MainContent = () => (
+
   <main className={'h-screen snap-y snap-proximity overflow-y-auto'}>
+
 	  <section className={'min-h-screen flex flex-col items-center justify-center snap-start'}>
 		  <div className={'flex flex-col items-center justify-center py-14'}>
 			  <h1 className={'text-5xl md:text-6xl font-bold text-white text-center'}>Camilo Alvarez-Velez</h1>
@@ -124,7 +126,7 @@ const MainContent = () => (
 				  machine learning. Here are some of my favorites.
 			  </p>
 		  </div>
-		  <div className={"flex flex-col gap-12 py-10 lg:flex-row lg:flex-wrap bg-blue-900 p-20 mx-20 "}>
+		  <div className={"flex flex-col gap-12 py-10 pb-32 lg:flex-row lg:flex-wrap bg-blue-900 p-20 mx-20 "}>
 			  <div className={"showcase basis-1/3 flex-1 drop-shadow-2xl relative"}>
 				  <div className="description">
 					  <p>This is the bold and commanding description text for Web Project 1. It takes up the size of the card.</p>
@@ -137,6 +139,31 @@ const MainContent = () => (
 				  </div>
 				  <Image src={'/card-top.jpg'} className={"rounded-lg object-cover"} layout={'responsive'} width={500} height={300} alt={"Web Project 2"}/>
 			  </div>
+			  <div className={"showcase basis-1/3 flex-1 drop-shadow-2xl relative"}>
+				  <div className="description">
+					  <p>This is the bold and commanding description text for Web Project 1. It takes up the size of the card.</p>
+				  </div>
+				  <Image src={'/card-top.jpg'} className={"rounded-lg object-cover"} layout={'responsive'} width={500} height={300} alt={"Web Project 1"}/>
+			  </div>
+			  <div className={"showcase basis-1/3 flex-1 drop-shadow-2xl relative"}>
+				  <div className="description">
+					  <p>This is the bold and commanding description text for Web Project 2. It takes up the size of the card.</p>
+				  </div>
+				  <Image src={'/card-top.jpg'} className={"rounded-lg object-cover"} layout={'responsive'} width={500} height={300} alt={"Web Project 2"}/>
+			  </div>
+			  <div className={"showcase basis-1/3 flex-1 drop-shadow-2xl relative"}>
+				  <div className="description">
+					  <p>This is the bold and commanding description text for Web Project 1. It takes up the size of the card.</p>
+				  </div>
+				  <Image src={'/card-top.jpg'} className={"rounded-lg object-cover"} layout={'responsive'} width={500} height={300} alt={"Web Project 1"}/>
+			  </div>
+			  <div className={"showcase basis-1/3 flex-1 drop-shadow-2xl relative"}>
+				  <div className="description">
+					  <p>This is the bold and commanding description text for Web Project 2. It takes up the size of the card.</p>
+				  </div>
+				  <Image src={'/card-top.jpg'} className={"rounded-lg object-cover"} layout={'responsive'} width={500} height={300} alt={"Web Project 2"}/>
+			  </div>
+
 		  </div>
 	  </section>
 	  <section className={"pt-40"}>
@@ -161,11 +188,12 @@ const MainContent = () => (
 // Main component
 export default function Home() {
   return (
-    <div className={'mx-auto h-full w-full min-h-screen'}>
-	    <div className="absolute top-0 z-[-1] min-h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,100,215,0.3),rgba(255,255,255,0))]" style={{minHeight: '200vh'}}></div>
-	    <SocialLinks />
-	    <MainContent />
-   </div>
+	  <div className={'mx-auto h-full w-full min-h-screen relative'}> {/* Add 'relative' here */}
+		  <div className="absolute top-0 z-[-2] min-h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,100,215,0.3),rgba(255,255,255,0))]" style={{minHeight: '200vh'}}></div>
+		  <div className="absolute top-0 min-h-screen w-screen bg-repeat opacity-15 z-[-1]" style={{backgroundImage: "url('/bubble.webp')"}}></div>
+		  <SocialLinks />
+		  <MainContent />
+	  </div>
 
   );
 }

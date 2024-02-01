@@ -190,7 +190,7 @@ export default function Home() {
   return (
 	  <div className={'mx-auto h-full w-full min-h-screen relative'}> {/* Add 'relative' here */}
 		  <div className="absolute top-0 z-[-2] min-h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,100,215,0.3),rgba(255,255,255,0))]" style={{minHeight: '200vh'}}></div>
-		  <div className="absolute top-0 min-h-screen w-screen bg-repeat opacity-15 z-[-1]" style={{backgroundImage: "url('/bubble.webp')"}}></div>
+		  <div className="absolute top-0 min-h-screen w-screen bg-repeat opacity-10 z-[-1]" style={{backgroundImage: "url('/wallpapers/oriental-tiles.png')"}}></div>
 		  <SocialLinks />
 		  <MainContent />
 	  </div>

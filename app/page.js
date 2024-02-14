@@ -33,25 +33,25 @@ const MainContent = () => (
 		  <div className={'max-w-5xl w-full p-6 md:p-8 bg-blue-400 shadow-md rounded-2xl flex items-center bg-gradient-to-bl from-cyan-500 to-purple-800'}>
 			  <div className={'w-1/2 pr-6'}>
 
-				  <p className={'text-lg py-2 text-gray-200'}>
+				  <p className={'text-lg py-2 text-gray-200 font-Calibre'}>
 					  I&apos;m a developer based in Orlando, FL. I love to create and build things that live on the internet.
 					  I am currently a student at the University of Central Florida pursuing a degree in Computer Science.
 					  I am currently seeking internships as a Software Engineer. I am also a huge bookworm and love to read.
-					  You can find me on <a className={'text-blue-500'} href="https://app.thestorygraph.com/profile/nowayreads" target="_blank" rel="noopener noreferrer">The StoryGraph</a> where I track my reading.
-
+					  You can find me on <a class="underline decoration-2 decoration-pink-500 hover:text-sky-300 duration-200" href="https://app.thestorygraph.com/profile/nowayreads" target="_blank"
+					                        rel="noopener noreferrer">The StoryGraph</a> where I track my reading.
 				  </p>
 				  <p className={'text-lg py-2 text-gray-200'}>
-					  Here are a few technologies I&apos;ve been working with recently:
+					  <br/>Here are a few technologies I&apos;ve been working with recently:
 				  </p>
-				  <ul className={'text-lg py-2 text-gray-200 inline-flex gap-2'}>
-					  <li>JavaScript (ES6+)</li>
-					  <li>React</li>
-					  <li>Next.js</li>
-					  <li>Node.js</li>
-					  <li>GraphQL</li>
-					  <li>Python</li>
-					  <li>Java</li>
-					  <li>C++</li>
+				  <ul className={'tech-list text-lg py-2 text-gray-200 inline-flex gap-2'}>
+					  <li className={'tech-item'}>JavaScript</li>
+					  <li className={'tech-item'}>React</li>
+					  <li className={'tech-item'}>Next.js</li>
+					  <li className={'tech-item'}>Node.js</li>
+					  <li className={'tech-item'}>GraphQL</li>
+					  <li className={'tech-item'}>Python</li>
+					  <li className={'tech-item'}>Java</li>
+					  <li className={'tech-item'}>C</li>
 				  </ul>
 
 			  </div>
@@ -59,9 +59,10 @@ const MainContent = () => (
 			  {/* Image Section */}
 			  <div className={'w-1/2'}>
 				  <a href="https://www.linkedin.com/in/camilo-alvarez-velez/" target="_blank" rel="noopener noreferrer">
-					  <div className={'relative mx-auto rounded-full lg:w-80 lg:h-80 mt-6 md:mt-0 overflow-hidden md:h-60 md:w-60 group hover:scale-110 duration-300'}>
+					  <div
+						  className={'relative mx-auto rounded-full lg:w-80 lg:h-80 mt-6 md:mt-0 overflow-hidden md:h-60 md:w-60 group hover:scale-110 duration-300'}>
 						  <div
-							  className={'w-full h-full absolute bg-blue-950 opacity-50 transition-opacity duration-700 group-hover:opacity-0 z-10'}
+							  className={'w-full h-full absolute bg-blue-950 opacity-20 transition-opacity duration-700 group-hover:opacity-0 z-10'}
 							  style={{ aspectRatio: '1/1' }} // Set aspect ratio to match the image
 						  ></div>
 						  <Image src={Headshot} alt={'Headshot of Camilo Alvarez-Velez'} className={'rounded-full'} layout={'fill'} objectFit={'cover'} />
@@ -163,7 +164,6 @@ const MainContent = () => (
 				  </div>
 				  <Image src={'/card-top.jpg'} className={"rounded-lg object-cover"} layout={'responsive'} width={500} height={300} alt={"Web Project 2"}/>
 			  </div>
-
 		  </div>
 	  </section>
 	  <section className={"pt-40"}>

@@ -56,6 +56,20 @@ body {
     font-family: "Calibre","Inter","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+@font-face {
+    font-family: 'Calibre';
+    src: url('/public/fonts/TestCalibre-Regular.otf') format('truetype'); /* adjust the path accordingly */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('/public/fonts/TestCalibre-Bold.otf') format('truetype'); /* adjust the path accordingly */
+    font-weight: bold;
+    font-style: normal;
+}
+
 h1{
     font-family: 'JetBrains Mono NL SemiBold', monospace;
     font-size: 6em;
@@ -102,4 +116,20 @@ p {
 
 .showcase:hover .description {
     opacity: 1;
+}
+
+.tech-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    z-index: 1; /* Add this line */
+    position: relative; /* Add this line */
+    flex-wrap: wrap;
+}
+
+.tech-item {
+    background-color: #333; /* Dark grey background */
+    color: #fff; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding around the text */
+    margin-bottom: 10px; /* Space between items */
 }
